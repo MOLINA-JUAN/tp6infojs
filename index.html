@@ -26,16 +26,13 @@
     <p>
         <strong>2</strong>-Podemos agregar js a html de dos diferentes modos:<br/>
         1ra forma: Esta forma es tanto usable en el body como en el head.<br/>
-    </p>
-    <p>
-    -Depende de donde pongas este código, será como va a cargar tu página. Si bien es más aconsejable colocarlo en el head para evitar molestar el código de html, hacerlo en el body, lo hará más rápido.
-    </p>
-    <p>2da forma: Linkeando el archivo js: esta forma se usa en el head, esta es de las mejores y más utilizadas formas, ya que, podemos reciclar el código de js de ser necesario.</p>
-    <p>Para usar esta forma, el archivo js debe estar en el mismo directorio que el html.</p>
-    <p>ejemplos:</p>
+    -Depende de donde pongas este código, será como va a cargar tu página. Si bien es más aconsejable colocarlo en el head para evitar molestar el código de html, hacerlo en el body, lo hará más rápido.<br/>
+    2da forma: Linkeando el archivo js: esta forma se usa en el head, esta es de las mejores y más utilizadas formas, ya que, podemos reciclar el código de js de ser necesario.<br/>
+    Para usar esta forma, el archivo js debe estar en el mismo directorio que el html.<br/>
+    ejemplos:</p>
     <img src="Captura de pantalla (15).png" alt="">
     <p>
-        <strong>3</strong>Expresiones regulares: Son patrones que se usan para hacer coincidir combinaciones de caracteres en cadenas, en javascript son regulares y objetos.
+        <strong>3</strong>-Expresiones regulares: Son patrones que se usan para hacer coincidir combinaciones de caracteres en cadenas, en javascript son regulares y objetos.
         Para crear una expresión regular:<br/> 
         Usa una expresión regular literal que es un patrón encerrado entre barras, proporciona la compilación de la expresión regular cuando se carga el script. 
         let re = /ab+c/;<br/>
@@ -62,6 +59,40 @@
             <li>son fáciles de depurar.</li>
            <li>las cadenas son el denominador común de muchas Apis.</li>
            </ul>
-        </p>
+    </p>
+    <p>
+        <strong>4</strong>-Hay siete formas de declarar funciones y son:
+        <ol>
+            <li>-Declaración/definición: esta es de las formas más comunes de declarar una función, y se hace colocando la palabra función, seguida de el nombre de la función, parámetros dentro de un paréntesis y el código/declaraciones del programa de js envueltas en una llave ,si  tenemos una función llamada suma, esta función tendrá un parámetro llamado número, dentro de la función estará el cálculo matemático de la suma retornada por la instrucción return que devuelve el valor a la función.
+                Los parámetros primitivos, pasan a las funciones por valor, si la función cambia el valor que tiene el parámetro, este cambio no afectara globalmente, tampoco a la función, pero si pasamos un array, que sería un objeto, los cambios realizados al parámetro si van a ser visibles, ya que, a los objetos de que estén como parámetros, la función va a cambiar las propiedades de este objeto
+            </li>
+            <li>
+                Por expresión: Las funciones pueden ser creadas mediante una expresión function, pueden ser anónimas o se puede poner un nombre con una expresión function, así se referirá a sí misma y facilitara la identificación de la función en el seguimiento de la pila de un depurador, la expresión function sirve para cuando se pasa una expresión como argumento de otra, se puede usar el constructor function para crear funciones a partir de una cadena en tiempo de ejecución.
+            </li>
+            <li>
+                por expresión inmediata o función expresada inmediatamente: Para llamar la función una sola vez se usa la función IIFE que se ejecuta de manera inmediata y no es posible acceder después a esta, para crearla debe hacerse desde un operador de agrupación (). Seguido de (), así será interpretado por javascript.
+            </li>
+            <li>
+                Método abreviado: Puede utilizarse como método en la declaración de un objeto en la clase ES6, se debe asignar un nombre de función seguido de una lista de parámetro () y los simbolos de llaves, para delimitar el cuerpo de las instrucciones
+            </li>
+            <li>
+                funcion de flecha:para crearla se define la lista de parámetros y si es necesario () con el símbolo => para mostrar las instrucciones que se van a realizar, algunas características son:
+               <ul>
+                <li>no crea su propio contexto al ejecutarse.</li> 
+                <li>son anónimas.</li>
+                <li>el objeto argumento no se encuentra en el contexto de la función.
+                </li> 
+                <li>si al definirla no se usan las {}, la función devolverá el resultado de la ejecución de la instrucción que hayamos indicado</li>
+                </ul>
+            </li>
+            <li>
+                generar función: Nos permite parar o salir de la función en un punto dentro del conjunto de instrucciones y retorna la ejecución desde el punto en el que paramos anteriormente, se bede utilizar el * al comienzo de la definición de la función, siempre retorna un objeto con la siguiente extructura que invoquemos a la función next ()
+            </li>
+            <li>
+                function constructor: se puede crear una variable que invoque a un objeto function, a este objeto podremos enviar a todos los argumentos que se necesite, los primeros n argumentos, serán los parámetros de nuestra función y el ultimo será el código de la función.
+            </li>
+        </ol>
+    </p>
+    
 </body>
 </html>
