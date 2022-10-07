@@ -114,9 +114,64 @@ AND a nivel de bits(&);OR a nivel de bits (|);XOR a nivel de bits (^);NOT a nive
         AND Lógico (&&);OR lógico (||);NOT lógico (!).
     </p>
     <p>
-        La Conversión entre tipos es el cambio de un operador al operador correcto, hay diferentes conversiones y son:
+        La Conversión entre tipos es el cambio de un operador al operador correcto, hay diferentes conversiones y son:<br/>
+        ToString: esta conversión se presentara cuando un valor es necesario en forma de texto, una forma de hacer esto podría ser  value = strung (value);.<br/>
+        ToNumber:Esta conversión se hace automáticamente en cálculos matemáticos y expresiones, se puede usar a función number (value) para convertir de manera explicita un valor a un numero que es requerida cuando se lee un valor desde una fuente basada en texto. Si el string no es un numero valido el resultado será n a n.<br/>
+        ToBoolean:es la conversión mas simple, ocurre en operaciones lógicas y puede realizarse de manera explicita llamando a la fncion boolean (value).<br/>
     </p>
+    <p><strong>6</strong>-Estructuras de control:<br/>
+        JS utiliza estructuras de control, estas son herramientas que permiten controlar el flujo de las operaciones del programa, un programa sin estructuras de control es inútil, las estructuras de control son:<br/>
+        Estructura If/else: If representa una parte del código que se ejecuta si una condición es verdadera, en caso de que esta condición sea falsa,  esta estructura permite utilizar otra parte del código. Se usa de esta manera:<br/>
+        If (condicion){<br/>
+        Instrucción <br/>
+        }<br/>
+        El else no es obligatoria y se usa asi:<br/>
+        If (condicion){<br/>
+        intruccion<br/>
+        }else{<br/>
+        intruccion<br/>
+        }<br/>
+        -En el caso de tener varios else, que serian como tener rebotes en nuestro código, ya que la primera condición no se cumple y tampoco la segunda por ejemplo, podemos hacer esto:<br/>
+        if(condicion){<br/>
+        instruccion<br/>
+        }else if(condicion){<br/>
+        instruccion<br/>
+        }else if(condicion){<br/>
+        instruccion<br/>
+        }<br/>
+        Estructura Switch: utilizaremos esta estructura en caso de que tengamos más de una acción y diferentes condiciones, ya que se vuelve muy eficiente y para esto, vamos a darle valores y comprobaremos si el valor esta dentro del código de la estructura, la usaremos asi:
+        switch(variable) {<br/>
+        case valor_1:<br/>
+        break;<br/>
+        case val   or_2:<br/>
+        break;<br/>
+        case valor_n:<br/>
+        break;<br/>
+        default:<br/>
+        break;<br/>
+        }<br/>
+        La estructura switch se define mediante la palabra reservada switch seguida, entre paréntesis, del
+        Nombre de la variable que se va a utilizar en las comparacione, las instrucciones que
+        forman parte del switch se encierran entre las llaves { y }.En el swicht se van a definir las comparaciones que se requieren realizar sobre el valor de la variable, cada una de ellas se indica mediante la palabra reserva seguida del valor con la que se hace la comparación, si dicho valor coincide con el valor indicado por case se ejecutan las instrucciones definidas dentro de esa clase, luego de las instrucciones del case se incluye la sentencia breack para terminar el switch (no es obligatorio), las comparaciones se hacen por orden, siendo importante el orden en el que se definen los case, si el valor de switch no coincide con los valores de case, se usa el valor default, aunque es opcional, los switch los usan para definir cuando no es correcta la opción y mostrar un mensaje por pantalla.<br/>
+        Estructura while: Esta estructura permite crear bucles que se ejecutan ninguna o más veces, dependiendo de la condición indicada. Su funcionamiento de define: "mientras se cumpla la condición indicada, repite indefinidamente las instrucciones incluidas dentro del bucle", si esto no se cumple, el bucle no se ejecutara, por otro lado, si se hace, se ejecuta una vez y vuelve a comprobar esta condición, si esta se sigue cumpliendo se sigue ejecutando el bucle hasta que esta condición no se cumpla.<br/>
+        while(condicion) {<br/>
+        instruccion<br/>
+        actualizacion<br/>
+        }<br/>
+        Estructura for: esta estructura permite hacer peticiones al usuario de casos/sentencias o instrucciones de una forma sencilla, mientras la condición  indicada en el for, se siga cumpliendo, se va a repetir la ejecución del código dentro del for, al terminar una vuelta/repetición se suma a las variables que se usaron en la condición. El for se usa asi:<br/>
+        For (inicialización; condición; actualizacion){<br/>
+        Instrucción<br/>
+        actualizacion<br/>
+        }<br/>
+        Inicialización: acá se establecen los valores donde comienza el bucle y variables que controlan las repeticiones.<br/>
+        Condición: esta elemento decide si el código se va a seguir repitiendo o no.<br/>
+        Actualización: el valor que se asigna a las variables que controlan el programa después de cada repetición.<br/>
+        Estructura do...while: esta estructura es muy parecida a la etructura while, lo que los hacen diferentes son, que en este bucle, el programa siempre se repite excepto la primera vez, esta estructura comprueba el programa cada vez que se repite, la primera vez siempre se ejecuta todas las instrucciones. En el while, siempre deben agregarse caracteres, esto es no se hace en el while común. Esta estructura se usa asi:<br/>
+        Do{<br/>
+        Instrucción<br/>
+        }while (condicion);<br/>
 
+    </p>
 
 </body>
 </html>
