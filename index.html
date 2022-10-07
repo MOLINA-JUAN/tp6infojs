@@ -9,7 +9,7 @@
 <body>
     <h1>Trabajo Practico de investigacion de Java Script</h1>
     <h2>Respuestas:</h2>
-    <p>1-Las versiones de java script han ido evolucionando a lo largo del tiempo a la par de los navegadores, su lenguaje también avanzo y incremento sus capacidades, cuando se desarrola js se depende de la plataforma de ejecución y su compatibilidad o no con alternativas modernas del lenguaje, con la alternativa de este lenguaje que ah evolucionado en 2 vertientes:
+    <p><strong>1</strong>-Las versiones de java script han ido evolucionando a lo largo del tiempo a la par de los navegadores, su lenguaje también avanzo y incremento sus capacidades, cuando se desarrola js se depende de la plataforma de ejecución y su compatibilidad o no con alternativas modernas del lenguaje, con la alternativa de este lenguaje que ah evolucionado en 2 vertientes:
         <ul>
         <li>El lenguaje incorpora operadores, estructura de control, reglas de sistaxis.</li>
         <li>Los navegadores incorporan instrucciones para manipular elementos modernos de la pagina.</li>
@@ -24,7 +24,7 @@
         Javascript ECMAScript6: esta versión es lanzada en 2015, se puede usar en todos los navegadores excepto en internet Explorer, es usada por todos los profesionales, ya que es muy eficiente, y de ser necesario se puede traducir el código para soporte a viejos navegadores.<br/>
     </p>
     <p>
-        2-Podemos agregar js a html de dos diferentes modos:<br/>
+        <strong>2</strong>-Podemos agregar js a html de dos diferentes modos:<br/>
         1ra forma: Esta forma es tanto usable en el body como en el head.<br/>
     </p>
     <p>
@@ -34,5 +34,34 @@
     <p>Para usar esta forma, el archivo js debe estar en el mismo directorio que el html.</p>
     <p>ejemplos:</p>
     <img src="Captura de pantalla (15).png" alt="">
+    <p>
+        <strong>3</strong>Expresiones regulares: Son patrones que se usan para hacer coincidir combinaciones de caracteres en cadenas, en javascript son regulares y objetos.
+        Para crear una expresión regular:<br/> 
+        Usa una expresión regular literal que es un patrón encerrado entre barras, proporciona la compilación de la expresión regular cuando se carga el script. 
+        let re = /ab+c/;<br/>
+        Llamando a la función constructora del objeto RegExp, de la siguiente manera
+        let re = new RegExp('ab+c');<br/>
+        Una expresión regular se aplica a diferentes cadenas mediante  Una expresión regular se puede aplicar a diferentes cadenas mediante expreg.test(cadena), que devuelve true si cadena cumple “expreg y false”  en caso contrario, al usar la expresión regular con el objeto RegExp, como se escribe dentro de una cadena es necesario escribir dos barras invertidas, se emplea para escapar los caracteres especiales. Cuando se emplea mediante una cadena literal no se debe escapar la barra invertida.<br/>
+    </p>
+    <p>
+        Variables:<br/>En js puedes declarar variables usando las palabras claves var, const, let,  es útil pensarlas como etiquetas para nuestros valores, .declaramos una variable edad y usamos el operador de asignación(signo edad) para asignar nuestro valor,4 a esta variable, usamos la palabra clave var:var edad =4;, las variables se pueden usar para guardar cualquier dato en js. Las palabras clave en js son reservadas y cuando las usas le estás diciendo a js que vas a declarar una variable, la variable puede sr designada a un nombre diferente. Cuando una variabale tiene un hambito global quiere decir que esta disponible en cualquier lugar de tu programa; cuando la variable tiene alcanze de función quiere decir que solo se accede dentro de la función de la que fue creada, por eso son utiles ya que son necesarias dentro de esta función.
+    </p>
+    <p>
+        Tipos de datos:<br/> 
+        tipos primitivos: sin definir (undefined), nulo (null),lógicos (boolean), numérico(number), cadena (string) y símbolo(symbol):<br/>
+        Sin definir (undefined): la variable no definida tiene como valor este tipo de dato, no es un objeto y se puede identificar con, typeof o myVar=== undefined ya que hay una variable con el nombre undefined.<br>
+        Nulo (null):Es un objeto según typeoff pero no es una instancia de object, hay que dar un tratamiento especifico de null, hay una única forma de comprobar si el valor es nulo y es compararlo con el literal null.<br>
+        Simbolo(symbol): se usan como claves en objetos y mapas de datos, no se pueden convertir a otros tipos, por lo que, para acceder a ellos, tendremos que hacer referencias al símbolo con el que fue creado. Cuando se crea un símbolo se obtien.e un valor único por eso son de utilidad para crear constantes con valores únicos y no producir confusiones para valores complicados, la mejor forma de saber si un valor es de tipo symbol es utilizar typeoff.<br>
+    </p>
+    <p>Logico(boolean):es un objeto contenedor parqa un valor booleano, el valor, como primer parámetro si es necesario se convierte en valor booleano, si el valor se omite o es 0,-0,null, false, NaN, undefined o “ “ (casillas vacias) el valor inicial del objeto es false, todos los demás valores, incuido cualquier objeto, la cadena “false” o un arreglo vacio, tendrá un valor inicial de true, no hay que confundir los valores del boolean primitivo, true y false, con los del objeto boolean. Cualquier objeto cuyo valor sea undefined o null, un objeto boolean cuyo valor es false se evalua como true cuando se pasa a declaración condicional. Para convertir un valor no booleano en uno booleano, usa boolean como función. Si especificas un objeto boolean cuyo valor es false como valor inicial el nuevo objeto tiene valor de true, no se usa un objeto boolean en lugar de boolean primitivo.</p>
+    <p>Number: objeto primitivo emvolvente que permite representar y manipular valores numéricos, contiene constantes y métodos para trabajar con números y valores que pueden ser convertidos a números usando la función number (), los usos del objeto number (valor) son: convewrtir un string a un tipo numérico, si no puede ser convertido en numero, devuelve n a n.</p>
+    <p>Cadena (string): se usa para representar datos textuales, es un conjunto de elementos mde valores enteros si signos de 16 bits, cada elemento del string ocupa sua lugar en la cadena, la longitud de cadena depende de la cantidad de elementos que contenga, las cadenas son inmutables, es decir, que al crear una cadena, no la podremos modificar, pero es posible crear otra cadena basada en una operación en la cadena original.<br/>
+        Beneficios de usar cadena para representar datos complejos:
+        <ul>
+            <li>construir cadenas complejas y concatenadas es sencillo.</li>
+            <li>son fáciles de depurar.</li>
+           <li>las cadenas son el denominador común de muchas Apis.</li>
+           </ul>
+        </p>
 </body>
 </html>
