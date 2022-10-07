@@ -176,7 +176,27 @@ AND a nivel de bits(&);OR a nivel de bits (|);XOR a nivel de bits (^);NOT a nive
         A través del DOM podemos acceder por medio de js a sus correspondientes objetos para alterar sus propiedades o invocar sus métodos, esta definido y administrado por el W3C y los distintos navegadores aplican las especificaciones del world wide web consortium, para darle soporte a sus aplicaciones, no solo permite modificar páginas web en html, sino también documentos xml. Los niveles de DOM cambian según  el navegador y las especificaciones se entienden de distinta manera por las distintas organizaciones creadas por los navegadores, se creó un marco donde trabajar con los objetos difiere de un navegador a otro. En js, la forma de acceder al DOM es a través del objeto llamado document que representa al árbol de DOM.,en su interior pueden existir varios tipos de elementos que serán principalmente element o node.<br/>
         Todos los elementos html pendiendo del elemento que sean tendrán un tipo de dato específico. E n algunos casos se prefiere usar librerías de terceros que facilitan el trabajo pero reducen el rendimiento, programando de manera más rápida,  también se elijen frameworks de js para trabajar y no gestionar el DOM a bajo nivel, esto se cambia para hacer otra tarea relacionada con el frame work escogido        
     </p>
-    
+    <p>
+        <strong>8</strong>-MAP: es un mapa de clave/valor simple que permite iterar sus elementos en el orden en el que fueron insertados.Los objetos se han utilizado para asignar cadenas a valores, y permiten establecer claves, recuperar esos valores, eliminar claves y detectar si una clave almacena algo. Sus ventajas son:<br/>
+        +usar mapas sobre objetos hasta el momento de la ejecución cuando esta sea desconocida o cuando todas las claves y valores sean del mismo tipo.<br/>
+        +si es necesario usa mapas para almacenar valores primitivos (claves)  por que el objeto trata a cada clave como una cadena, ya sea un valor numérico, booleano o primitivo.<br/>
+        <ul>Se utilizan con una sencilla interfaz donde sus métodos son:
+        <li>set( key, value ): añadir una nueva pareja clave-valor</li>
+        <li>+get( key ): obtener el valor asociado a una clave</li>
+        <li>delete( key ): borrar una pareja clave-valor por medio de la clave.</li>
+        <li>has( key ): comprobar si hay una determinada clave en el mapa.</li>
+        </ul>
+        Map tiene métodos y propiedades que son:
+        <ul>
+            <li>size: contiene el número de valores en el mapa.</li>
+            <li>forEach( (value, key, map) => {}, [thisValue] ): recorre todos elementos contenidos en el mapa.</li>
+            <li>values(): devuelve un iterable con los valores del mapa.</li>
+            <li>keys(): devuelve un iterable con las claves del mapa.</li>
+            <li>entries(): devuelve un iterable con matrices [key, value].</li>
+            <li>clear(): elimina todos los valores del mapa.</li>
+        </ul>
+        El map de convierte automáticamente en un iterable si se usa dentro de un bucle y el constructor de map puede aceptar una matriz o un itinerable- con un conjunto de pares clave-valor para inicializar el objeto. Puede ser utilizado como clave asociar valores a objetos, matrices, funciones, etc. Es un recurso útil para asociar información a cualquier elemento con el que se trabaje.        
+    </p>
 
 </body>
 </html>
