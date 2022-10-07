@@ -8,14 +8,19 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
+    <div class="parent">
+    <div class="caratula">
+        <a href="index.html" class="caratula">caratula</a>
+    </div>
     <div class="encabezado">
-        <img class="imagen" src="IMAGENES/logoepet.jfif" height="40px" width="40px" alt="">
-        <h2> var nombre ="Juan Pablo Molina" ;</h2>
-        <p>console.log(Tecnico Programador);</p>
+        <img class="imagen1" src="IMAGENES/logoepet.jfif" height="40px" width="40px" alt="">
+        <a href="#"><h2> var nombre ="Juan Pablo Molina" ;</h2></a>
+        <a href="#"><p>console.log(Tecnico Programador);</p></a>
     </div>
     <h1>Trabajo Practico de investigacion de Java Script</h1>
     <h2>Respuestas:</h2>
-    <p><strong>1</strong>-Las versiones de java script han ido evolucionando a lo largo del tiempo a la par de los navegadores, su lenguaje también avanzo y incremento sus capacidades, cuando se desarrola js se depende de la plataforma de ejecución y su compatibilidad o no con alternativas modernas del lenguaje, con la alternativa de este lenguaje que ah evolucionado en 2 vertientes:
+    <strong>1</strong>
+    <div class="uno"><p>-Las versiones de java script han ido evolucionando a lo largo del tiempo a la par de los navegadores, su lenguaje también avanzo y incremento sus capacidades, cuando se desarrola js se depende de la plataforma de ejecución y su compatibilidad o no con alternativas modernas del lenguaje, con la alternativa de este lenguaje que ah evolucionado en 2 vertientes:
         <ul>
         <li>El lenguaje incorpora operadores, estructura de control, reglas de sistaxis.</li>
         <li>Los navegadores incorporan instrucciones para manipular elementos modernos de la pagina.</li>
@@ -29,16 +34,22 @@
         Javascript ECMAScript 5: se publica esta versión en 2009 y funciona en todos los navegadores del mercado.<br/>
         Javascript ECMAScript6: esta versión es lanzada en 2015, se puede usar en todos los navegadores excepto en internet Explorer, es usada por todos los profesionales, ya que es muy eficiente, y de ser necesario se puede traducir el código para soporte a viejos navegadores.<br/>
     </p>
-    <p>
-        <strong>2</strong>-Podemos agregar js a html de dos diferentes modos:<br/>
+    </div>
+    <strong>2</strong>
+    <div class="dos"> <p>
+        -Podemos agregar js a html de dos diferentes modos:<br/>
         1ra forma: Esta forma es tanto usable en el body como en el head.<br/>
     -Depende de donde pongas este código, será como va a cargar tu página. Si bien es más aconsejable colocarlo en el head para evitar molestar el código de html, hacerlo en el body, lo hará más rápido.<br/>
     2da forma: Linkeando el archivo js: esta forma se usa en el head, esta es de las mejores y más utilizadas formas, ya que, podemos reciclar el código de js de ser necesario.<br/>
     Para usar esta forma, el archivo js debe estar en el mismo directorio que el html.<br/>
     ejemplos:</p>
-    <img src="IMAGENES/Captura de pantalla (15).png" alt="">
+    <img src="IMAGENES/Captura de pantalla (15).png" class="imagen" alt="">
+    </div>
+    <strong>3</strong>
+   <div class="tres">
+   
     <p>
-        <strong>3</strong>-Expresiones regulares: Son patrones que se usan para hacer coincidir combinaciones de caracteres en cadenas, en javascript son regulares y objetos.
+        -Expresiones regulares: Son patrones que se usan para hacer coincidir combinaciones de caracteres en cadenas, en javascript son regulares y objetos.
         Para crear una expresión regular:<br/> 
         Usa una expresión regular literal que es un patrón encerrado entre barras, proporciona la compilación de la expresión regular cuando se carga el script. 
         let re = /ab+c/;<br/>
@@ -66,8 +77,11 @@
            <li>las cadenas son el denominador común de muchas Apis.</li>
            </ul>
     </p>
-    <p>
-        <strong>4</strong>-Hay siete formas de declarar funciones y son:
+   </div>
+   <strong>4</strong>
+   <div class="cuatro">
+   <p>
+        -Hay siete formas de declarar funciones y son:
         <ol>
             <li>-Declaración/definición: esta es de las formas más comunes de declarar una función, y se hace colocando la palabra función, seguida de el nombre de la función, parámetros dentro de un paréntesis y el código/declaraciones del programa de js envueltas en una llave ,si  tenemos una función llamada suma, esta función tendrá un parámetro llamado número, dentro de la función estará el cálculo matemático de la suma retornada por la instrucción return que devuelve el valor a la función.
                 Los parámetros primitivos, pasan a las funciones por valor, si la función cambia el valor que tiene el parámetro, este cambio no afectara globalmente, tampoco a la función, pero si pasamos un array, que sería un objeto, los cambios realizados al parámetro si van a ser visibles, ya que, a los objetos de que estén como parámetros, la función va a cambiar las propiedades de este objeto
@@ -98,9 +112,11 @@
                 function constructor: se puede crear una variable que invoque a un objeto function, a este objeto podremos enviar a todos los argumentos que se necesite, los primeros n argumentos, serán los parámetros de nuestra función y el ultimo será el código de la función.
             </li>
         </ol>
-    </p>
+    </p></div>
+    <strong>5</strong>
+    <div class="cinco">
     <p>
-        <strong>5</strong>-operadores y conversión entre tipos:<br/>
+    -operadores y conversión entre tipos:<br/>
         Operadores de asignacion:<br/>
         suma(+); resta(-); multiplicación(*); división(/); residuo(%); exponenciación(**);  desplazamiento a la izquierda(<<);  desplazamiento a la derecha(>>);  desplazamiento a la derecha sin signo(>>>); AND bit a bit(&);XOR bit a bit(^);OR bit a bit(|);AND lógico(&&);OR lógico(||); anulación lógica(??).
     </p>
@@ -125,7 +141,10 @@ AND a nivel de bits(&);OR a nivel de bits (|);XOR a nivel de bits (^);NOT a nive
         ToNumber:Esta conversión se hace automáticamente en cálculos matemáticos y expresiones, se puede usar a función number (value) para convertir de manera explicita un valor a un numero que es requerida cuando se lee un valor desde una fuente basada en texto. Si el string no es un numero valido el resultado será n a n.<br/>
         ToBoolean:es la conversión mas simple, ocurre en operaciones lógicas y puede realizarse de manera explicita llamando a la fncion boolean (value).<br/>
     </p>
-    <p><strong>6</strong>-Estructuras de control:<br/>
+</div>
+<strong>6</strong>
+<div class="seis">
+    <p>-Estructuras de control:<br/>
         JS utiliza estructuras de control, estas son herramientas que permiten controlar el flujo de las operaciones del programa, un programa sin estructuras de control es inútil, las estructuras de control son:<br/>
         Estructura If/else: If representa una parte del código que se ejecuta si una condición es verdadera, en caso de que esta condición sea falsa,  esta estructura permite utilizar otra parte del código. Se usa de esta manera:<br/>
         If (condicion){<br/>
@@ -177,13 +196,19 @@ AND a nivel de bits(&);OR a nivel de bits (|);XOR a nivel de bits (^);NOT a nive
         Instrucción<br/>
         }while (condicion);<br/>
     </p>
+</div>
+<strong>7</strong>
+<div class="siete">
     <p>
-        <strong>7</strong>-El objeto DOM es una interfaz para html, esta interfaz traduce el contenido del html a un objeto estandarizado, Js tiene un acceso fácil para modificarlo, significa document object model o html, una página que está formada por múltiples etiquetas html formando un árbol de etiquetas relacionadas entre sí que se denomina árbol DOM. <br/>
+        -El objeto DOM es una interfaz para html, esta interfaz traduce el contenido del html a un objeto estandarizado, Js tiene un acceso fácil para modificarlo, significa document object model o html, una página que está formada por múltiples etiquetas html formando un árbol de etiquetas relacionadas entre sí que se denomina árbol DOM. <br/>
         A través del DOM podemos acceder por medio de js a sus correspondientes objetos para alterar sus propiedades o invocar sus métodos, esta definido y administrado por el W3C y los distintos navegadores aplican las especificaciones del world wide web consortium, para darle soporte a sus aplicaciones, no solo permite modificar páginas web en html, sino también documentos xml. Los niveles de DOM cambian según  el navegador y las especificaciones se entienden de distinta manera por las distintas organizaciones creadas por los navegadores, se creó un marco donde trabajar con los objetos difiere de un navegador a otro. En js, la forma de acceder al DOM es a través del objeto llamado document que representa al árbol de DOM.,en su interior pueden existir varios tipos de elementos que serán principalmente element o node.<br/>
         Todos los elementos html pendiendo del elemento que sean tendrán un tipo de dato específico. E n algunos casos se prefiere usar librerías de terceros que facilitan el trabajo pero reducen el rendimiento, programando de manera más rápida,  también se elijen frameworks de js para trabajar y no gestionar el DOM a bajo nivel, esto se cambia para hacer otra tarea relacionada con el frame work escogido        
     </p>
+</div>
+<strong>8</strong>
+<div class="ocho">
     <p>
-        <strong>8</strong>-MAP: es un mapa de clave/valor simple que permite iterar sus elementos en el orden en el que fueron insertados.Los objetos se han utilizado para asignar cadenas a valores, y permiten establecer claves, recuperar esos valores, eliminar claves y detectar si una clave almacena algo. Sus ventajas son:<br/>
+       -MAP: es un mapa de clave/valor simple que permite iterar sus elementos en el orden en el que fueron insertados.Los objetos se han utilizado para asignar cadenas a valores, y permiten establecer claves, recuperar esos valores, eliminar claves y detectar si una clave almacena algo. Sus ventajas son:<br/>
         +usar mapas sobre objetos hasta el momento de la ejecución cuando esta sea desconocida o cuando todas las claves y valores sean del mismo tipo.<br/>
         +si es necesario usa mapas para almacenar valores primitivos (claves)  por que el objeto trata a cada clave como una cadena, ya sea un valor numérico, booleano o primitivo.<br/>
         <ul>Se utilizan con una sencilla interfaz donde sus métodos son:
@@ -203,40 +228,68 @@ AND a nivel de bits(&);OR a nivel de bits (|);XOR a nivel de bits (^);NOT a nive
         </ul>
         El map de convierte automáticamente en un iterable si se usa dentro de un bucle y el constructor de map puede aceptar una matriz o un itinerable- con un conjunto de pares clave-valor para inicializar el objeto. Puede ser utilizado como clave asociar valores a objetos, matrices, funciones, etc. Es un recurso útil para asociar información a cualquier elemento con el que se trabaje.        
     </p>
+</div>
+<strong>9</strong>
+<div class="nueve">
     <p>
-        <strong>9</strong>-Los eventos js permiten la interacción entre aplicaciones de js y usuarios, el nombre de cada evento se forma con el prefijo on, seguido con la palabra en ingles asociada al evento asi elevento de pinchar con el raton se denomina onclick y el evento asociado a tal acción se denomina onmausemove.
+        -Los eventos js permiten la interacción entre aplicaciones de js y usuarios, el nombre de cada evento se forma con el prefijo on, seguido con la palabra en ingles asociada al evento asi elevento de pinchar con el raton se denomina onclick y el evento asociado a tal acción se denomina onmausemove.
         Lista de eventos:<br/>
         - OnAbort: se produce cuando un usuario detiene la carga de la imagen, o detiene la carga de la pagina o realiza una acción que la detiene (js 1.1).<br/>
         - OnBlur:Un elemento pierde el foco de la aplicación, el mismo esta situado sobre el texto, una pagina u otro elemento(js 1.0).<br/>
         - OnChange:se cambia el estado de un elemento de formulario (js 1.0).<br/>
-        - OnClick: se produce cuando se da un click al botón del mause sobre un elemento de la pagia, un botón o enlace (js 1.0).<br/>
-        - OnDragdrop: el usuario suelta algo que arrasta sobre la pagina web (js 1.2).<br/>
+        - OnClick: se produce cuando se da un click al botón del mause sobre un elemento de la página, un botón o enlace (js 1.0).<br/>
+        - OnDragdrop: el usuario suelta algo que arrasta sobre la página web (js 1.2).<br/>
         - OnError: no se puede cargar un documento o imagen (js 1.1).<br/>
-        - OnFocus:un elemento de la pagina o la ventana ganan el foco de la aplicación (js 1.0).<br/>
+        - OnFocus:un elemento de la página o la ventana ganan el foco de la aplicación (js 1.0).<br/>
         - OnKeydown: el usuario preciona una tecla independientemente si la suelta o no, se produce igual (js 1.2).<br/>
         - OnKeypress:el usuario deja pulsada una tecla un tiempo determinado, ntes se produce un onkeydown cuando se pulsa la tecla(js 1.2).<br/>
         - OnKeyup: se produce cuando el usuario libera la tecla(js 1.2).<br/>
-        - Onload: las imágenes o pagina terminan de cargarse(js 1.0).<br/>
-        - Onmousedown:Se pulsa un elemento de la pagina, y se produce cuando se pulsa el botón se suelte o no (js 1.2).<br/>
-        - Onmousemove:El raton se mueve por la pagina(js 1.2).<br/>
-        - Onmouseout: el puntero del raton sale del area ocupada por un elemento de la pagina (js 1.1).<br/>
-        - Onmouseover: el puntero del raton entra en el area ocupada por elemento de la pagina(js 1.0).<br/>
+        - Onload: las imágenes o página terminan de cargarse(js 1.0).<br/>
+        - Onmousedown:Se pulsa un elemento de la página, y se produce cuando se pulsa el botón se suelte o no (js 1.2).<br/>
+        - Onmousemove:El raton se mueve por la página(js 1.2).<br/>
+        - Onmouseout: el puntero del raton sale del area ocupada por un elemento de la página (js 1.1).<br/>
+        - Onmouseover: el puntero del raton entra en el area ocupada por elemento de la página(js 1.0).<br/>
         - Onmouseup:el usuario suelta el botón del raton(js 1.2).<br/>
         - Onmove: se mueve la ventana del navegador o un frame (js 1.2).<br/>
         - Onresize: se redimensiona la ventana del navegador o el frame(js 1.2).<br/>
         - Onreset:se asocia a los formularios y se desata en el momento que un usuario clickea en el botón de reset de un formulario.(js 1.1).<br/>
         - Onselect : el usuario seleciona un elemento del formulario (js 1.0).<br/>
         - Onsubmit: se apreta el botón de enviar en el formulario(js 1.0).<br/>
-        - Onunload: al abandonar la pagina se ejecuta el evento onunload (js 1.o).
+        - Onunload: al abandonar la página se ejecuta el evento onunload (js 1.o).
         - Dbclick: el usuario hace doble click en un elemento de formulario o un link(js 1.3).<br/>
-        - Scroll: se hace un desplaamiento en la pagina completa o en elementos de la pagina que tengas sus propias zonas de scroll(js 1.3).<br/>
+        - Scroll: se hace un desplasamiento en la página completa o en elementos de la página que tengas sus propias zonas de scroll(js 1.3).<br/>
         
     </p>
+</div>
+<strong>10</strong>
+<div class="diez">
+    <p>
+        -Las propiedades para obtener datos del input seria:<br/>
+        -Textarea: Con esta propiedad obtendremos directamente los valores del input ingresados en el value.<br/>
+        -Radiobutton: Con esta propiedad no nos interesa saber el valor de todos los value, sino, los que hayan sido seleccionados. La propiedad checked va a devolver true para el radiobutton, o false en otro caso.<br/>
+        -Checkbox: estos son muy parecidos a los radiobutton, lo que cambia es que ahora el checkbox debe ser comprobado uno por uno independientemente del resto, esto es porque se puede seleccionar más de una opción en los checkbox independientemente de los demás.<br/>
+        -Select: para obtener los datos del value vamos a necesitar 2 propiedades mas:
+        <ol>
+            <li>Options: array creado de manera automática por el navegador para todas las listas desplegables, que contiene todas las opciones de la lista, para obtener la primera opción usaremos “document.getelementeByID(“id lista”).options[0]”.</li>
+            <li>Selectedindex: el navegador guarda automáticamente el valor de la opción, y guarda el índice de esta opción que fue seleccionada, este índice hace referencia al array options., lo mas importante es no confundir el valor de la propiedad selecteindex, con el valor de la propiedad value seleccionada.</li>
+        </ol>
+        Verificacion de formulario: Consiste en llamar a una función de validación cuando el usuario pulsa sobre el botón de envío del formulario, se comprueban si los valores que ha introducido el usuario cumplen las restricciones impuestas por la aplicación.<br/>
+        Esta técnica se basa en el evento onsubmit de js, que varía su comportamiento en función del valor que se devuelve, onsubmit devuelve el valor true y el formulario se envía de manera normal, si el evento devuelve el valor false el formulario no será enviado, si hay un elemento incorrecto se devuelve el valor false, sino se devuelve el valor true.<br/>
 
-
+        Validación de que ¿No soy un robot?:<br/>
+        Para hacer esto hay varios pasos que seguir:<br/>
+        <ul>
+            <li>Paso 1: colocar una etiqueta script y placeholder en formulario, se usa un esqueleto de estructura de página con un formulario que contiene una entrada name, una entrada email y un botón de sumisión. Para desmostrar que recaptcha paso necesitaremos ejecutar pruebas en el lado del servidor javasscript.</li>
+            <li>Paso 2: El método de formulario es Post, los datos entonces serán devueltos a esta pagina dentro de un array de variables, se mostrara el valor name y email y el valor g-recaptcha-response, al marcar la caja “yo no soy un robot” se vera una cadena de caracteres, ese valor se enviara a google para que lo verifique.</li>
+            <li>Paso 3: Usaremos la librería recaptcha para js y la colocaremos en la raíz del proyecto.</li>
+            <li>Paso 4: esta librería contiene funciones que envían al g-recaptcha-response a google una solicitud HTTP. Si está todo bien.</li>
+        </ul>
+    </p>
+</div>
+</div>
 
     <div class="piedepagina">
-        <h2>pagina 1</h2>
+        <h2><a href="">pagina 1 web</a></h2>
     </div>
 </body>
 </html>

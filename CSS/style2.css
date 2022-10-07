@@ -1,0 +1,14 @@
+*{
+    background-color: rgb(13, 13, 26);
+    text-align: center;
+    color: white;
+    font-family: arial;
+
+}
+.cara{
+    border: 4px solid white;
+}
+a{
+ text-decoration: none;
+ color: white;   
+}
